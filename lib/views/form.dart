@@ -38,6 +38,17 @@ class _FormState extends State<Formulario> {
               ),
             ),
           ),
+          Padding(
+            padding: EdgeInsets.only(top: 50),
+            child: RaisedButton(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+              child: Text("Calcular", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w400)),
+              color: Colors.amber[700],
+              onPressed: () {
+                print('clickou nimin');
+              },
+            ),
+          )
         ]
       )
     );
