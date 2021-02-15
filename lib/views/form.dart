@@ -10,6 +10,12 @@ class _FormState extends State<Formulario> {
   TextEditingController _controllerAlcool = TextEditingController();
   TextEditingController _controllerGasolina = TextEditingController();
 
+  void _calcular (){
+    String alcool = _controllerGasolina.text;
+    String gasolina = _controllerAlcool.text;
+    print("Alcool: ${alcool}, Gasolina: ${gasolina}");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -53,9 +59,7 @@ class _FormState extends State<Formulario> {
               padding: EdgeInsets.symmetric(vertical: 18),
               child: Text("Calcular", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w400)),
               color: Colors.amber[700],
-              onPressed: () {
-                print('clickou nimin');
-              },
+              onPressed: (){_calcular();},
             ),
           ),
           Padding(
