@@ -9,11 +9,36 @@ class _FormState extends State<Formulario> {
 
   TextEditingController _controllerAlcool = TextEditingController();
   TextEditingController _controllerGasolina = TextEditingController();
+  String _resultado = "";
 
   void _calcular (){
-    String alcool = _controllerGasolina.text;
-    String gasolina = _controllerAlcool.text;
-    print("Alcool: ${alcool}, Gasolina: ${gasolina}");
+    double alcool =  double.tryParse(_controllerAlcool.text);
+    double gasolina = double.tryParse(_controllerGasolina.text);
+    
+    if(alcool == null || gasolina == null){
+      setState(() {
+        _resultado = "Dados inválidos";
+      });
+    }    
+
+    if((alcool/gasolina)>= 0.7){
+      setState(() {
+        _resultado = "Melhor abastecer com Gasolina";
+      });
+    }else{
+      setState(() {
+        _resultado = "Melhor abastecer com Álcool";
+      });
+    }
+
+    _limparCampos();
+  }
+
+  void _limparCampos(){
+    setState(() {
+      _controllerAlcool.text = "";
+      _controllerGasolina.text = "";
+    });
   }
 
   @override
@@ -65,7 +90,7 @@ class _FormState extends State<Formulario> {
           Padding(
             padding: EdgeInsets.only(top: 50),
             child: Text(
-              "É melhor comprar Gasolina",
+              _resultado,
               style: TextStyle(fontSize: 16, color: Colors.grey[600], fontWeight: FontWeight.w300),
             ), 
           )
