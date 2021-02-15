@@ -5,6 +5,9 @@ Saiba qual a melhor opção para o abastecimento do seu automóvel.
 Olá! Esse projeto foi desenvolvido durante um curso de Flutter na Udemy, afim de testar conhecimentos básicos da framework Flutter. 
 
 ## Como abrir o projeto na minha máquina
+##### Execute o comando abaixo para baixar o aplicativo na sua máquina.
+###### É possivel também ir no botão code desta página para pegar a url do projeto.
+> https://github.com/ThaysMrtns/Alcool_ou_gasolina.git
 ##### Execute o comando flutter pub get para instalar as dependências do aplicativo.
 > flutter pub get
 
