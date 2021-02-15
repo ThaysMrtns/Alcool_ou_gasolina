@@ -1,6 +1,13 @@
 # Álcool ou Gasolina
 Saiba qual a melhor opção para o abastecimento do seu automóvel.
+
+
 ![Alt text](imagens/logo.png?raw=true "Title")
+
+
+
+
+
 
 ## Sobre o desenvolvimento do projeto
 Olá! Esse projeto foi desenvolvido durante um curso de Flutter na Udemy, afim de testar conhecimentos básicos da framework Flutter. 
