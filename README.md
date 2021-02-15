@@ -8,7 +8,7 @@ Olá! Esse projeto foi desenvolvido durante um curso de Flutter na Udemy, afim d
 
 ## Como abrir o projeto na minha máquina
 
-##### Clone os arquivos do app na sua máquina.
+Clone os arquivos do app na sua máquina.
 
 ###### É possivel também ir no botão code desta página para pegar a url do projeto.
 > git clone https://github.com/ThaysMrtns/Alcool_ou_gasolina.git
@@ -18,7 +18,7 @@ Olá! Esse projeto foi desenvolvido durante um curso de Flutter na Udemy, afim d
 
 ## Como instalar o Flutter
 
-##### Acesse o site oficial do FLutter para instalar a framework na sua máquina. Escolha qual sistema operacional você está usando. Além disso, é necessário ter instalado préviamente o Android Studio. Deixarei disponível ambos links para download das ferramentas.
+Acesse o site oficial do FLutter para instalar a framework na sua máquina. Escolha qual sistema operacional você está usando. Além disso, é necessário ter instalado préviamente o Android Studio. Deixarei disponível ambos links para download das ferramentas.
 > https://flutter.dev/docs/get-started/install
 > https://developer.android.com/studio
 
