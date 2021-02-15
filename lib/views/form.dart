@@ -50,7 +50,7 @@ class _FormState extends State<Formulario> {
           Padding(
             padding: EdgeInsets.only(top: 20),
             child: Text(
-              "Saiba qual a melhor opção para o abastecimento do seu carro", 
+              "Saiba qual a melhor opção para o abastecimento do seu automóvel", 
               style: TextStyle(fontSize: 18, color: Colors.grey[700], fontWeight: FontWeight.w300) 
             ),
           ),
