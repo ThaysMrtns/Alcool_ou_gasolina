@@ -6,10 +6,15 @@ class Formulario extends StatefulWidget {
 }
 
 class _FormState extends State<Formulario> {
+
+  TextEditingController _controllerAlcool = TextEditingController();
+  TextEditingController _controllerGasolina = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
             padding: EdgeInsets.only(top: 20),
@@ -21,33 +26,44 @@ class _FormState extends State<Formulario> {
           Padding(
             padding: EdgeInsets.only(top: 10),
             child: TextField(
+              keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                contentPadding: EdgeInsets.symmetric(vertical: 20),
+                contentPadding: EdgeInsets.symmetric(vertical: 15),
                 labelText: "Preço do Álcool, ex: 3,95",
                 labelStyle: TextStyle(fontSize: 16, color: Colors.grey[600], fontWeight: FontWeight.w300),
               ),
+              controller: _controllerAlcool,
             ),
           ),
           Padding(
             padding: EdgeInsets.only(top: 20),
             child: TextField(
+              keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                contentPadding: EdgeInsets.symmetric(vertical: 20),
+                contentPadding: EdgeInsets.symmetric(vertical: 15),
                 labelText: "Preço da Gasolina, ex: 5,65",
                 labelStyle: TextStyle(fontSize: 16, color: Colors.grey[600], fontWeight: FontWeight.w300)
               ),
+              controller: _controllerGasolina,
             ),
           ),
           Padding(
             padding: EdgeInsets.only(top: 50),
             child: RaisedButton(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+              padding: EdgeInsets.symmetric(vertical: 18),
               child: Text("Calcular", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w400)),
               color: Colors.amber[700],
               onPressed: () {
                 print('clickou nimin');
               },
             ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 50),
+            child: Text(
+              "É melhor comprar Gasolina",
+              style: TextStyle(fontSize: 16, color: Colors.grey[600], fontWeight: FontWeight.w300),
+            ), 
           )
         ]
       )

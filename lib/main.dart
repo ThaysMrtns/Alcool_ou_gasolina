@@ -21,14 +21,16 @@ class _AppState extends State<App> {
         title: Text(
           "Álcool ou Gasolina"
         ),
-        backgroundColor: Colors.amber[600],
+        backgroundColor: Colors.amber[500],
       ),
-      body: Padding(
-        padding: EdgeInsets.all(20),
-        child: Column(children: [
-          Formulario(),
-        ],),  
-      ),
+      body: SingleChildScrollView(
+        child: 
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: Column(children: [
+              Formulario(),
+            ],),  
+          ),)
     );
   }
 }
