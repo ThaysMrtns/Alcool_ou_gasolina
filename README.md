@@ -24,4 +24,5 @@ Olá! Esse projeto foi desenvolvido durante um curso de Flutter na Udemy, afim d
 
 ##### Está tendo dificuldades nas instalações?
 > [Instalando Flutter e Android Studio Windows](https://medium.com/flutter-comunidade-br/iniciando-no-flutter-parte1-52e120e007d7)
+
 > [Instalando Flutter e Android Studio Linux](https://medium.com/sysvale/instalando-o-flutter-no-linux-fa3a8db67180)
