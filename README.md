@@ -18,8 +18,8 @@ Clone os arquivos do app na sua máquina.
 ## Como instalar o Flutter
 
 Acesse o site oficial do FLutter para instalar a framework na sua máquina. Escolha qual sistema operacional você está usando. Além disso, é necessário ter instalado préviamente o Android Studio. Deixarei disponível ambos links para download das ferramentas.
-> https://flutter.dev/docs/get-started/install ,
-> https://developer.android.com/studio
+> [Flutter](https://flutter.dev/docs/get-started/install),
+> [Android Studio](https://developer.android.com/studio)
 
 ##### Está tendo dificuldades nas instalações?
 > [Instalando Flutter e Android Studio Windows](https://medium.com/flutter-comunidade-br/iniciando-no-flutter-parte1-52e120e007d7),
